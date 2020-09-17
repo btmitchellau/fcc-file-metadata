@@ -19,10 +19,6 @@ app.get('/', function (req, res) {
      res.sendFile(process.cwd() + '/views/index.html');
   });
 
-app.get('/hello', function(req, res){
-  res.json({greetings: "Hello, API"});
-});
-
 app.listen(process.env.PORT || 3000, function () {
   console.log('Node.js listening ...');
 });
